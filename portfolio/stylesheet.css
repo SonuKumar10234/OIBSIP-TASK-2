@@ -1,0 +1,646 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+#header {
+    background-image:linear-gradient(to bottom, #051937, #4c275b, #982c61, #d44649);
+    height: 100vh;
+    width: 100%;
+}
+.nav-bar{
+    height: 50px;
+    width: 100%;
+    position:static;
+}
+.nav-bar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height:50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.nav-bar ul li a:hover{
+    color: #eb8012;
+}
+.nav-bar ul li{
+    list-style: none;
+    margin-right:20px;
+    display: inline;
+}
+.nav-bar ul{
+    float: right;
+}
+.nav-bar h2{
+    display: inline;
+    padding-left: 10px;
+    line-height: 50px;
+    color: white;
+}
+span{
+    color: #d44649;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 30px;
+    float: right;
+    margin-top:120px;
+    margin-right: 200px;
+}
+#header p{
+    margin-top:150px;
+    margin-left:320px;
+    color:antiquewhite;
+}
+#header h1{
+    
+    margin-left:320px;
+    color:orange;
+    font-size: 40px;
+}
+#header h3{
+    color:aqua;
+    margin-left:320px;
+}
+#About{
+    background-color: rgba(2, 54, 73, 0.97);
+    height:250px;
+    
+}
+#About h2{
+    text-align: center;
+    color:aqua;
+    padding-top: 20px;
+    
+}
+.Aboutme{
+    margin-top:10px;
+    margin-left:250px;
+    margin-right:250px;
+    color:white;
+    border:2px solid green;
+}
+.Aboutme p{
+    margin:30px;
+}
+#Qual{
+    background-color: rgb(255, 255, 128);
+    justify-content: center;
+    height: 280px;
+    text-align: center;
+    display: flex;
+    width: 100%;
+
+}
+#Qual h2{
+    border-bottom:2px solid red;
+    display: inline;
+}
+#Qual-out{
+    background-color: rgb(255, 255, 128);
+    color:aqua;
+    text-align: center;
+    padding-top:20px;
+}
+.Qual1{
+    box-shadow: 0 4px 20px;
+    border-radius: 10px;
+    margin-top:80px;
+    background-color: rgb(49, 231, 179);
+    width:80%;
+    margin: 15px;
+    height: 180px;
+}
+.Qual1 h2{
+    margin-top: 50px;
+}
+.Qual2{
+    height: 180px;
+    border-radius: 10px;
+    margin-top:80px;
+    box-shadow: 0 4px 20px;
+    background-color: #74992e;
+    margin: 15px;
+    width:80%;
+}
+.Qual3{
+    box-shadow: 0 4px 20px;
+    background-color: rgba(218, 124, 226, 0.788);
+    border-radius: 10px;
+    height: 180px;
+    margin: 15px;
+    width:80%;
+}
+#Skills{
+    background-color: rgb(81, 238, 225);
+    height: 250px;
+}
+#Skills h2{
+    text-align: center;
+    color:#eb8012;
+    padding-top: 15px;
+}
+.webtech h1{
+    border: 2px Solid red;
+    margin: 20px;
+    text-align: center;
+    width:40%;
+}
+
+.webtech{
+    justify-content: center;
+    display: flex;
+}
+.progtech{
+    display: flex;
+    justify-content: center;
+}
+.progtech h1{
+    width:40%;
+    margin: 20px;
+    text-align: center;
+    border: 2px Solid red;
+}
+#Exp{
+    display: flex;
+    background-color: rgb(255, 255, 130);
+    height:300px;
+    justify-content: center;
+    text-align: center;
+}
+.work{
+    background-color: rgb(255, 255, 130);
+    text-align: center;
+    color:#eb8012;
+    padding-top:20px;
+    
+}
+.Exp1{
+    box-shadow: 0 4px 20px;
+    transition: 0.8s;
+    margin-top: 20px;
+    border: 2px solid orange;
+    border-radius: 100px;
+    margin:25px;
+    cursor: pointer;
+    height: 150px;
+    width: 500px;
+}
+.Exp1:hover{
+    background-color: rgb(214, 73, 73);
+    height:180px;
+    color:#fff;
+    width: 550px;
+}
+.Exp1 h2{
+    padding-top: 10px;
+}
+.Exp2{
+    margin-top: 20px;
+    transition: 0.8s;
+    box-shadow: 0 4px 20px;
+    border: 2px solid orange;
+    border-radius: 100px;
+    margin:25px;
+    cursor: pointer;
+    height: 150px;
+    width: 500px;
+}
+.Exp2:hover{
+    background-color: rgb(1, 130, 104);
+    height:180px;
+    color:#fff;
+    width: 550px;
+}
+.Exp2:hover .btn2{
+    display: block;
+}
+.Exp2 h2{
+    padding-top: 10px;
+}
+.btn{
+    cursor: pointer;
+    background: aqua;
+    border: none;
+    padding: 10px;
+    transition: 0.8s;
+    border-radius: 5px;
+    margin-left: 900px;
+    margin-top: 50px;
+    width: 150px;
+}
+.btn:hover{
+    background-color: #eb8012;
+    color: white;
+}
+
+#Project{
+    display:flex;
+    justify-content: center;
+    height:200px;
+    text-align:center;
+}
+.mywork{
+    color:#eb8012;
+    text-align: center;
+    margin-top:20px;
+}
+.proj1{
+    box-shadow: 0 4px 20px;
+    border-radius: 40px;
+    transition: 0.8s;
+    height:150px;
+    width:30%;
+    margin:25px;
+}
+.proj1 h3{
+    padding-top: 10px;
+
+}
+.proj1:hover{
+    background-color: rgb(228, 122, 122);
+    color:white;
+}
+.proj2{
+    box-shadow: 0 4px 20px;
+    border-radius: 40px;
+    transition: 0.8s;
+    height:150px;
+    width:30%;
+    margin:25px;
+}
+.proj2 h3{
+    padding-top: 10px;
+}
+.proj2:hover{
+    background-color: rgb(90, 193, 90);
+    color:white;
+}
+.tellme{
+    background-color: lightgray;
+    text-align: center;
+    color: #eb8012;
+    margin-top: 20px;
+}
+
+#Contact{
+    background-color: transparent;
+    background-color: lightgray;
+    height:350px;
+    
+}
+.desc{
+    margin:30px;
+    width:50%;
+    float: left;
+
+}
+#user{
+    color:#74992e;
+    font-size: 30px;
+}
+#envelope{
+    margin-top:20px;
+    color:#74992e;
+    font-size: 30px;
+}
+#add{
+    margin-top:20px;
+    color:#74992e;
+    font-size: 30px;
+}
+.mess input{
+    margin-top:10px;
+    padding:5px;
+    height: 30px;
+    width:200px;
+    background-color: rgb(205, 216, 219);
+    border:none;
+    
+}
+#email{
+    margin-left:-215px;
+}
+#project{
+    width:450px;
+}
+textarea{
+    margin-top:10px;   
+    height:150px;
+    background-color: rgb(205, 216, 219);
+    width:460px;
+    border:none;
+}
+#submit{
+    background-color: rgb(13, 123, 131);
+    color:white;
+    cursor: pointer;
+    height:40px;
+}
+footer{
+    color:white;
+    background-color: rgb(6, 17, 33);
+    height:150px;
+    width: 100%;
+}
+
+#icon{
+    margin:30px;
+    font-size: 20px;
+    
+}
+
+footer p{
+    text-align: center;
+    padding-top: 100px;
+}
+.proj1 p{
+    margin-bottom: 20px;
+}
+.proj2 p{
+    margin-bottom: 20px;
+}
+.proj1 a:hover{
+    color:#9ef400;
+}
+.proj2 a:hover{
+    color:whitesmoke;
+}
+.see{
+    text-decoration: none;
+    padding:3px;
+    color: #ff5989;
+}
+
+@media only screen and (max-width:680px){
+
+    .nav-bar ul{
+        background: linear-gradient(#ff54a2, #ff575a);
+        width:100%;
+        position: absolute;
+        top:50px;
+        left:0;
+        
+    }
+    .nav-bar ul li{
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left:30px;
+        
+    }
+    .nav-bar ul li a:hover{
+        color: #be8019;
+    }
+    #header p{
+        margin-top:450px;
+        margin-left:70px;
+    
+    }
+    #header h1{
+        
+        margin-left:70px;
+        font-size: 20px;
+    }
+    #header h3{
+        
+        margin-left:70px;
+        font-size: 15px;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+        margin-top:450px;
+        margin-right: 50px;
+    }
+    .btn{
+        color:#fff;
+        background: #ff5ea2;
+        margin-left: 70px;
+        margin-top: 10px;
+        width: 120px;
+    }
+    .btn:hover{
+        background-color: rgba(255, 255, 85, 0.79);
+        color: greenyellow;
+    }
+    #About{
+        height:340px;
+    }
+    .Aboutme{
+        margin-left: 30px;
+        width:90%;
+    }
+    #Qual{
+        height: 620px;
+        width: 100%;
+        display: block;
+        background-color: rgb(255, 255, 128);
+    }
+    #Qual-out{
+        padding-bottom: 20px;
+    }
+    .Qual1{
+        width:90%;
+        height: 150px;
+        padding-top: 30px;
+        margin-top:0px;
+        margin-left:30px;
+    }
+    
+    .Qual2{
+        padding-top: 30px;
+        height: 150px;
+        margin-top: 25px;
+        margin-left:30px;
+        width:90%;
+    }
+    .Qual3{
+        padding-top: 30px;
+        height: 150px;
+        margin-top: 25px;
+        margin-left:30px;
+        width:90%;
+    }
+    #Project{
+        height:250px;
+    }
+    .proj1{
+        width:100%;
+        height:220px;
+    }
+    .proj2{
+        width:100%;
+        height:220px;
+    }
+    #Skills{
+        height:200px;
+    }
+    .webtech h1{
+        margin: 10px;
+        font-size: 20px;
+    }
+    .progtech h1{
+        margin: 10px;
+        font-size: 20px;
+    }
+    #Exp{
+        height:280px;
+
+    }
+    .Exp1{
+        height:220px;
+        border-radius: 10px;
+    }
+    .Exp2{
+        height:220px;
+        border-radius: 10px;
+    }
+    .Exp1:hover{
+        height:200px;
+    }
+    .Exp2:hover{
+        height:200px;
+    }
+    #Contact{
+        height:700px;
+    }
+    #submit{
+        width:100%;
+    }
+    .tellme{
+        padding-top:10px;
+    }
+    .mess{
+        margin-left:30px;
+    }
+    .mess input{
+        height: 30px;
+        width:150px;
+        
+    }
+    #email{
+        margin-left: -160px;
+    }
+   
+    textarea{
+        width:350px;
+    }
+
+    #project{
+        width:340px;
+    }
+    .proj1 p{
+        margin-bottom: 2px;
+    }
+    .proj2 p{
+        margin-bottom: 2px;
+    }
+}
+
+@media only screen and (min-width:681px) and (max-width:1051px){
+    #header p{
+        margin-top:250px;
+        margin-left:70px;
+    
+    }
+    #header h1{
+        
+        margin-left:70px;
+        font-size: 20px;
+    }
+    #header h3{
+        
+        margin-left:70px;
+        font-size: 15px;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+        margin-top:200px;
+        margin-right: 100px;
+    }
+    .btn{
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+    #About{
+        height:300px;
+    }
+    .Aboutme{
+        margin-left: 20px;
+        width:95%;
+    }
+    #Skills{
+        height:310px;
+    }
+    #Project{
+        height:220px;
+
+    }
+    .proj1{
+       height:150px;
+       width: 500px;
+    }
+    .proj2{
+        height:150px;
+        width:500px;
+    }
+    .tellme{
+        padding-top:20px;
+    }
+    #Contact{
+        height:640px;
+    }
+    .mess{
+        display:flex;
+    }
+    .mess input{
+        height: 30px;
+        width:110px;
+        
+    }
+    #email{
+        margin-left: -130px;
+    }
+   
+    textarea{
+        width:262px;
+    }
+
+    #project{
+        width:250px;
+    }
+    #Qual{
+        height: 300px;
+    }
+    .Qual1{
+        width:100%;
+        height: 235px;
+        padding-top: 30px;
+       
+    }
+    .Qual2{
+        width:100%;
+        height: 235px;
+        padding-top: 30px;
+       
+    }
+    .Qual3{
+        width:100%;
+        height: 235px;
+        padding-top: 30px;
+       
+    }
+    .nav-bar ul li{
+        
+        margin:2px;
+          
+      }
+    
+}
