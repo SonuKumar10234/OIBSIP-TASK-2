@@ -4,42 +4,47 @@
     font-family: 'Poppins';
     scroll-behavior: smooth;
 }
-
 #header {
     background-image:linear-gradient(to bottom, #051937, #4c275b, #982c61, #d44649);
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 .nav-bar{
     height: 50px;
-    width: 100%;
-    position:static;
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    margin:0px 0px 0px 150px;
+    margin-top:-3.01rem;
 }
 .nav-bar ul li a{
     color: white;
     text-decoration: none;
     font-size: 20px;
+    margin-right:20px;
     line-height:50px;
     transition: 0.5s;
     cursor: pointer;
+    margin-top: 0px;
 }
 .nav-bar ul li a:hover{
     color: #eb8012;
 }
 .nav-bar ul li{
     list-style: none;
-    margin-right:20px;
     display: inline;
 }
 .nav-bar ul{
-    float: right;
+    margin-right:10px;
+    align-items: flex-end;
 }
-.nav-bar h2{
-    display: inline;
+#header h2{
+    display: inline-block;
     padding-left: 10px;
     line-height: 50px;
     color: white;
-}
+} 
 span{
     color: #d44649;
 }
@@ -58,7 +63,6 @@ img{
     color:antiquewhite;
 }
 #header h1{
-    
     margin-left:320px;
     color:orange;
     font-size: 40px;
@@ -69,33 +73,37 @@ img{
 }
 #About{
     background-color: rgba(2, 54, 73, 0.97);
-    height:250px;
-    
+    height: auto;
+    padding:20px;
+}
+
+/* common for all */
+.text-align-center{
+    text-align: center;
+}
+.pt-20px{
+    padding-top: 20px;
 }
 #About h2{
-    text-align: center;
     color:aqua;
-    padding-top: 20px;
-    
+    padding-bottom: 10px;
 }
 .Aboutme{
-    margin-top:10px;
-    margin-left:250px;
-    margin-right:250px;
+    width:70%;
+    align-items: center;
+    margin:auto;
     color:white;
     border:2px solid green;
-}
-.Aboutme p{
-    margin:30px;
+    padding:30px;
 }
 #Qual{
     background-color: rgb(255, 255, 128);
     justify-content: center;
-    height: 280px;
+    height: auto;
     text-align: center;
     display: flex;
-    width: 100%;
-
+    width: auto;
+    padding: 10px;
 }
 #Qual h2{
     border-bottom:2px solid red;
@@ -104,46 +112,35 @@ img{
 #Qual-out{
     background-color: rgb(255, 255, 128);
     color:aqua;
-    text-align: center;
-    padding-top:20px;
 }
-.Qual1{
+.Quali{
     box-shadow: 0 4px 20px;
     border-radius: 10px;
-    margin-top:80px;
+    margin: 15px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.para{
+    padding-top: 10px;
+}
+.bg-1{
     background-color: rgb(49, 231, 179);
-    width:80%;
-    margin: 15px;
-    height: 180px;
 }
-.Qual1 h2{
-    margin-top: 50px;
-}
-.Qual2{
-    height: 180px;
-    border-radius: 10px;
-    margin-top:80px;
-    box-shadow: 0 4px 20px;
+.bg-2{
     background-color: #74992e;
-    margin: 15px;
-    width:80%;
 }
-.Qual3{
-    box-shadow: 0 4px 20px;
+.bg-3{
     background-color: rgba(218, 124, 226, 0.788);
-    border-radius: 10px;
-    height: 180px;
-    margin: 15px;
-    width:80%;
 }
 #Skills{
     background-color: rgb(81, 238, 225);
-    height: 250px;
+    height: auto;
+    padding:20px;
 }
 #Skills h2{
-    text-align: center;
+    
     color:#eb8012;
-    padding-top: 15px;
 }
 .webtech h1{
     border: 2px Solid red;
@@ -151,7 +148,6 @@ img{
     text-align: center;
     width:40%;
 }
-
 .webtech{
     justify-content: center;
     display: flex;
@@ -163,65 +159,39 @@ img{
 .progtech h1{
     width:40%;
     margin: 20px;
-    text-align: center;
     border: 2px Solid red;
 }
 #Exp{
     display: flex;
     background-color: rgb(255, 255, 130);
-    height:300px;
+    height: auto;width: auto;
     justify-content: center;
     text-align: center;
+    padding:20px;
 }
 .work{
     background-color: rgb(255, 255, 130);
-    text-align: center;
     color:#eb8012;
-    padding-top:20px;
-    
 }
-.Exp1{
+.Exp-details{
     box-shadow: 0 4px 20px;
     transition: 0.8s;
-    margin-top: 20px;
     border: 2px solid orange;
-    border-radius: 100px;
-    margin:25px;
+    border-radius: 20px;
+    margin:20px;
     cursor: pointer;
-    height: 150px;
-    width: 500px;
+    height: auto;
+    padding:20px;
 }
-.Exp1:hover{
-    background-color: rgb(214, 73, 73);
-    height:180px;
+.Exp-details:hover{
+    background-color: rgb(95, 204, 55);
+    height:250px;
     color:#fff;
-    width: 550px;
 }
-.Exp1 h2{
-    padding-top: 10px;
-}
-.Exp2{
-    margin-top: 20px;
-    transition: 0.8s;
-    box-shadow: 0 4px 20px;
-    border: 2px solid orange;
-    border-radius: 100px;
-    margin:25px;
-    cursor: pointer;
-    height: 150px;
-    width: 500px;
-}
-.Exp2:hover{
+.hover-bg:hover{
     background-color: rgb(1, 130, 104);
-    height:180px;
+    height:250px;
     color:#fff;
-    width: 550px;
-}
-.Exp2:hover .btn2{
-    display: block;
-}
-.Exp2 h2{
-    padding-top: 10px;
 }
 .btn{
     cursor: pointer;
@@ -230,15 +200,17 @@ img{
     padding: 10px;
     transition: 0.8s;
     border-radius: 5px;
-    margin-left: 900px;
-    margin-top: 50px;
+    margin-left: 71%;
+    margin-top: 30px;
     width: 150px;
+}
+.btn a{
+    text-decoration: none;;
 }
 .btn:hover{
     background-color: #eb8012;
     color: white;
 }
-
 #Project{
     display:flex;
     justify-content: center;
@@ -247,35 +219,21 @@ img{
 }
 .mywork{
     color:#eb8012;
-    text-align: center;
-    margin-top:20px;
 }
-.proj1{
+.proj{
     box-shadow: 0 4px 20px;
-    border-radius: 40px;
+    border-radius: 20px;
     transition: 0.8s;
     height:150px;
-    width:30%;
+    width:40%;
     margin:25px;
 }
-.proj1 h3{
+.proj h3{
     padding-top: 10px;
-
 }
-.proj1:hover{
+.proj:hover{
     background-color: rgb(228, 122, 122);
     color:white;
-}
-.proj2{
-    box-shadow: 0 4px 20px;
-    border-radius: 40px;
-    transition: 0.8s;
-    height:150px;
-    width:30%;
-    margin:25px;
-}
-.proj2 h3{
-    padding-top: 10px;
 }
 .proj2:hover{
     background-color: rgb(90, 193, 90);
@@ -287,18 +245,15 @@ img{
     color: #eb8012;
     margin-top: 20px;
 }
-
 #Contact{
     background-color: transparent;
     background-color: lightgray;
     height:350px;
-    
+    display: flex;
+    padding: 20px;
 }
 .desc{
-    margin:30px;
     width:50%;
-    float: left;
-
 }
 #user{
     color:#74992e;
@@ -314,26 +269,24 @@ img{
     color:#74992e;
     font-size: 30px;
 }
-.mess input{
+.mess{
+    width: 50%;
+}
+.mess .input {
     margin-top:10px;
     padding:5px;
     height: 30px;
-    width:200px;
     background-color: rgb(205, 216, 219);
-    border:none;
-    
+    border:none;   
 }
-#email{
-    margin-left:-215px;
-}
-#project{
-    width:450px;
+.mess table , td , tr , .input{
+    width:90%;
 }
 textarea{
     margin-top:10px;   
     height:150px;
     background-color: rgb(205, 216, 219);
-    width:460px;
+    width:100%;
     border:none;
 }
 #submit{
@@ -348,11 +301,9 @@ footer{
     height:150px;
     width: 100%;
 }
-
 #icon{
     margin:30px;
     font-size: 20px;
-    
 }
 
 footer p{
@@ -377,185 +328,17 @@ footer p{
     color: #ff5989;
 }
 
-@media only screen and (max-width:680px){
-
-    .nav-bar ul{
-        background: linear-gradient(#ff54a2, #ff575a);
-        width:100%;
-        position: absolute;
-        top:50px;
-        left:0;
-        
-    }
-    .nav-bar ul li{
-      display: block;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      margin-left:30px;
-        
-    }
-    .nav-bar ul li a:hover{
-        color: #be8019;
-    }
+/* for table */
+@media only screen and (max-width:792px) {
     #header p{
-        margin-top:450px;
+        margin-top:200px;
         margin-left:70px;
-    
     }
-    #header h1{
-        
+    #header h1{      
         margin-left:70px;
         font-size: 20px;
     }
     #header h3{
-        
-        margin-left:70px;
-        font-size: 15px;
-    }
-    img{
-        height: 100px;
-        width: 100px;
-        margin-top:450px;
-        margin-right: 50px;
-    }
-    .btn{
-        color:#fff;
-        background: #ff5ea2;
-        margin-left: 70px;
-        margin-top: 10px;
-        width: 120px;
-    }
-    .btn:hover{
-        background-color: rgba(255, 255, 85, 0.79);
-        color: greenyellow;
-    }
-    #About{
-        height:340px;
-    }
-    .Aboutme{
-        margin-left: 30px;
-        width:90%;
-    }
-    #Qual{
-        height: 620px;
-        width: 100%;
-        display: block;
-        background-color: rgb(255, 255, 128);
-    }
-    #Qual-out{
-        padding-bottom: 20px;
-    }
-    .Qual1{
-        width:90%;
-        height: 150px;
-        padding-top: 30px;
-        margin-top:0px;
-        margin-left:30px;
-    }
-    
-    .Qual2{
-        padding-top: 30px;
-        height: 150px;
-        margin-top: 25px;
-        margin-left:30px;
-        width:90%;
-    }
-    .Qual3{
-        padding-top: 30px;
-        height: 150px;
-        margin-top: 25px;
-        margin-left:30px;
-        width:90%;
-    }
-    #Project{
-        height:250px;
-    }
-    .proj1{
-        width:100%;
-        height:220px;
-    }
-    .proj2{
-        width:100%;
-        height:220px;
-    }
-    #Skills{
-        height:200px;
-    }
-    .webtech h1{
-        margin: 10px;
-        font-size: 20px;
-    }
-    .progtech h1{
-        margin: 10px;
-        font-size: 20px;
-    }
-    #Exp{
-        height:280px;
-
-    }
-    .Exp1{
-        height:220px;
-        border-radius: 10px;
-    }
-    .Exp2{
-        height:220px;
-        border-radius: 10px;
-    }
-    .Exp1:hover{
-        height:200px;
-    }
-    .Exp2:hover{
-        height:200px;
-    }
-    #Contact{
-        height:700px;
-    }
-    #submit{
-        width:100%;
-    }
-    .tellme{
-        padding-top:10px;
-    }
-    .mess{
-        margin-left:10px;
-    }
-    .mess input{
-        height: 30px;
-        width:150px;
-        
-    }
-    #email{
-        margin-left: -160px;
-    }
-   
-    textarea{
-        width:350px;
-    }
-
-    #project{
-        width:340px;
-    }
-    .proj1 p{
-        margin-bottom: 2px;
-    }
-    .proj2 p{
-        margin-bottom: 2px;
-    }
-}
-
-@media only screen and (min-width:681px) and (max-width:1051px){
-    #header p{
-        margin-top:250px;
-        margin-left:70px;
-    
-    }
-    #header h1{
-        
-        margin-left:70px;
-        font-size: 20px;
-    }
-    #header h3{
-        
         margin-left:70px;
         font-size: 15px;
     }
@@ -566,22 +349,30 @@ footer p{
         margin-right: 100px;
     }
     .btn{
+        width:120px;
         margin-left: 70px;
         margin-top: 10px;
     }
     #About{
-        height:300px;
+        height: auto;  
     }
     .Aboutme{
-        margin-left: 20px;
-        width:95%;
+        width: auto;
     }
     #Skills{
-        height:310px;
+        height: auto;
+        padding:20px;
+    }
+    .webtech h1{
+        width: 70%;
+        font-size:25px;
+    }
+    .progtech h1{
+        width: 70%;
+        font-size:25px;
     }
     #Project{
         height:220px;
-
     }
     .proj1{
        height:150px;
@@ -595,52 +386,162 @@ footer p{
         padding-top:20px;
     }
     #Contact{
-        height:640px;
-    }
-    .mess{
-        display:flex;
-    }
-    .mess input{
-        height: 30px;
-        width:110px;
-        
-    }
-    #email{
-        margin-left: -130px;
-    }
-   
-    textarea{
-        width:262px;
-    }
-
-    #project{
-        width:250px;
+        height: auto;
     }
     #Qual{
-        height: 300px;
+        height: auto;
+        padding:20px;
+        width:auto;
     }
-    .Qual1{
-        width:100%;
-        height: 235px;
+    .Quali{
+        width: 100%;
+        height: auto;
         padding-top: 30px;
-       
+        margin-top:0px;
     }
-    .Qual2{
+    .nav-bar ul li a{
+        margin-right:5px;
+      }   
+}
+/* for mobile */
+@media only screen and (max-width:600px){
+
+    .nav-bar ul{
+        background: linear-gradient(#ff54a2, #ff575a);
         width:100%;
-        height: 235px;
-        padding-top: 30px;
-       
-    }
-    .Qual3{
-        width:100%;
-        height: 235px;
-        padding-top: 30px;
-       
+        position: absolute;
+        top:50px;
+        left:0;
     }
     .nav-bar ul li{
-        
-        margin:2px;
-          
-      }
-    
+      display: block;
+      margin-left:20px;
+    }
+    .nav-bar ul li a:hover{
+        color: #be8019;
+    }
+    #header p{
+        margin-top:400px;
+        margin-left:20px;
+        font-size: 1rem;
+    }
+    #header h1{
+        margin-left:20px;
+        font-size: 1.1rem;
+    }
+    #header h3{
+        margin-left:20px;
+        font-size: 1rem;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+        margin-top:400px;
+        margin-right: 30px;
+    }
+    .btn{
+        color:#fff;
+        background: #ff5ea2;
+        margin-left: 25px;
+        margin-top: 10px;
+        width: 110px;
+        font-size:0.73rem;
+    }
+    .btn:hover{
+        background-color: rgba(255, 255, 85, 0.79);
+        color: greenyellow;
+    }
+    #About{
+        height: auto;
+    }
+    .Aboutme{
+        align-items: center;
+        width:auto;
+        padding:20px;
+        margin: 0px;
+    }
+    #Qual{
+        height: auto;
+        width: auto;
+        display: block;
+        background-color: rgb(255, 255, 128);
+    }
+    .Quali{
+        width:auto;
+        height: auto;
+        padding: 20px;
+        margin-bottom:30px;
+    }
+    #Project{
+        height: auto;
+        font-size:1rem;
+        padding:10px;
+    }
+    .proj{
+        height:auto;
+        text-align: justify;
+        padding:10px;
+        word-spacing: normal;
+        margin:10px;
+    }
+    .proj h3{
+        font-size:1rem;
+    }
+    .proj1{
+        width:50%;
+    }
+    .proj2{
+        width:50%;
+    }
+    .proj1 p{
+        margin-top: 10px;
+    }
+    #Skills{
+        height: auto;
+        padding:20px;
+    }
+    .webtech h1{
+        margin: 10px;
+        font-size: 1rem;
+    }
+    .progtech h1{
+        margin: 10px;
+        font-size: 1rem;
+    }
+    #Exp{
+        height: 50vh;
+       padding:10px;
+    }
+    .Exp-details{
+        height: auto;
+        border-radius: 10px;
+        margin:10px;
+        width:50%;
+        text-align: justify;
+        padding:10px;
+    }
+    .Exp-details h2{
+        font-size:1rem;
+    }
+    #Contact{
+        height: 550px;
+        display: block;
+    }
+    #submit{
+        width:100%;
+       
+    }
+    .tellme{
+        padding-top:10px;
+    }
+    .mess{
+        width:90%;
+    }
+    .desc{
+        font-size: 0.8rem;
+        width:90%;
+    }
+    .mess table , td , tr , .input{
+        width:98%;
+    }
 }
