@@ -160,6 +160,7 @@ img{
     width:40%;
     margin: 20px;
     border: 2px Solid red;
+    text-align: center;
 }
 #Exp{
     display: flex;
@@ -398,7 +399,6 @@ footer p{
     .progtech h1{
         width: 70%;
         font-size:25px;
-        text-align: center;
     }
     #Project{
         height:220px;
@@ -538,7 +538,6 @@ footer p{
     .progtech h1{
         margin: 10px;
         font-size: 1rem;
-        text-align: center;
     }
     #Exp{
         height: 50vh;
